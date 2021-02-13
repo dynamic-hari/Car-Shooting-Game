@@ -93,29 +93,7 @@ public class Board extends JPanel implements ActionListener
             }
         }
     }
-    /*public void checkCollisions()
-    {
-        for (Obstacle obstacle : list1)
-        {   Rectangle r1;
-            r1 = obstacle.getBounds();
-            ArrayList bullets = car.getBullets();
-            for (int w = 0; w < bullets.size(); w++) {
-                Bullet m = (Bullet) bullets.get(w);
-                Rectangle m1 = m.getBounds();
-                if (r1.intersects(m1) && obstacle.isVisible()) {
-                    obstacle.die();
-                    m.die();
-                    score=score+1;
-                }
-            }
-            Rectangle d = car.getBounds();
-            if (d.intersects(r1)) {
-                game=false;
-                time.stop();
-            }
-        }
-    }
-     */
+    
     void gameOver(Graphics g) {
         g.setColor(Color.black);
         g.fillRect(0, 0, 800, 800);
